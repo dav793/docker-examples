@@ -1,0 +1,12 @@
+version: '3.0' 
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ENV_USER: ${ENV_USER}
+        ENV_PWD: ${ENV_PWD}
+    restart: "no"
+    command: [ "tail", "-f", "/dev/null" ]

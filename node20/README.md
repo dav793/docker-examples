@@ -1,4 +1,4 @@
-# Docker image: Node 10.15
+# Docker image: Node 20
 
 ## Build image
 ```bash
